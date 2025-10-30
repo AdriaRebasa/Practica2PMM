@@ -34,7 +34,7 @@ class _WidgetPageState extends State<WidgetPage> {
     );
   }
 
-  /// Contenidor principal amb fons imatge
+  /// Contenidor principal amb imatge de fons i DragTarget
   Widget _buildMainContainer() {
     return Container(
       margin: const EdgeInsets.all(20),

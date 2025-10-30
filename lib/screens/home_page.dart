@@ -55,6 +55,7 @@ class _HomePageState extends State<HomePage> {
               },
               child: const Text("Anar a la PersonalPage"),
             ),
+            //boto per anar a la WidgetPage
             const SizedBox(height: 20),
             ElevatedButton(
               onPressed: () {

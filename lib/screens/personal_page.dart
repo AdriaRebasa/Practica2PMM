@@ -18,6 +18,7 @@ class _PersonalPageState extends State<PersonalPage> {
   late TextEditingController _contrasenyaController;
   DateTime? _dataSeleccionada;
 
+  //inicialitzacio dels controllers amb les dades de la persona
   @override
   void initState() {
     super.initState();
@@ -31,6 +32,7 @@ class _PersonalPageState extends State<PersonalPage> {
     _dataSeleccionada = widget.persona.dataNaixement;
   }
 
+  //alliberacio dels controllers
   @override
   void dispose() {
     _nomController.dispose();
@@ -47,7 +49,7 @@ class _PersonalPageState extends State<PersonalPage> {
       appBar: AppBar(title: Text("Personal Page de ${widget.persona.cognom}")),
       body: ListView(
         padding: const EdgeInsets.symmetric(horizontal: 10.0, vertical: 20.0),
-        children: [
+        children: [ // Llista de widgets (formulari)
           _crearNom(),
           const Divider(),
           _crearCognom(),
