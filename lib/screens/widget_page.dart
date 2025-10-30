@@ -23,7 +23,7 @@ class _WidgetPageState extends State<WidgetPage> {
         children: [
           const SizedBox(height: 20),
           const Text(
-            "Mou les caixes amb Draggable + DragTarget",
+            "Mou les caixes amb Draggable",
             style: TextStyle(fontSize: 18),
             textAlign: TextAlign.center,
           ),
